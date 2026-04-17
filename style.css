@@ -1,0 +1,83 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000000;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.calculator {
+  background: linear-gradient(145deg, goldenrod, gold);
+  padding: 20px;
+  border-radius: 15px;
+  width: 320px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+h2 {
+  text-align: center;
+  color: black;
+}
+
+#display {
+  width: 95%;
+  font-size: 24px;
+  padding: 10px;
+  margin-bottom: 10px;
+  text-align: right;
+  border-radius: 5px;
+  border: 1px solid red;
+  background-color: black;
+  color: gold;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+button {
+  padding: 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  border: 1px solid red;
+  background-color: black;
+  color: gold;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+button:hover {
+  background-color: goldenrod;
+}
+
+button.clear {
+  grid-column: span 2;
+  background-color: black;
+  color: gold;
+}
+
+button.history-btn {
+  grid-column: span 1;
+  background-color: black;
+  color: gold;
+}
+
+#history {
+  margin-top: 20px;
+  max-height: 200px;
+  overflow-y: auto;
+  background-color: black;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid red;
+  font-size: 14px;
+  color: gold;
+  width: 95%;
+}
+
+.hidden {
+  display: none;
+}
